@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Abstractions", "ByteBuster.Abstractions\ByteBuster.Abstractions.csproj", "{737FAC15-8B60-4A4D-935A-3041C941F784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Game", "ByteBuster.Game\ByteBuster.Game.csproj", "{7076F166-CDDC-41C8-9C09-DBA063A1305C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Ui.Maui", "ByteBuster.Ui.Maui\ByteBuster.Ui.Maui.csproj", "{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Tests", "ByteBuster.Tests\ByteBuster.Tests.csproj", "{4ECDA200-AE09-401F-9650-025C11B0C2F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Tests", "0_Tests", "{5BC0D5E2-7278-4679-8462-0648BCF8EBB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Entity Layer", "1_Entity Layer", "{C4B755F8-1525-40A1-ADD6-DA79820A8756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Logging", "ByteBuster.Logging\ByteBuster.Logging.csproj", "{A9190330-574B-4362-A72A-D54904ABAE7B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_Application Layer", "2_Application Layer", "{C690F8C7-5BAA-41FF-958E-1BDD37930846}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4_Presentation Layer", "4_Presentation Layer", "{414B7285-5AEC-4357-A548-DCC3D4DD691C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_Infrastructure Layer", "3_Infrastructure Layer", "{2CDD4B4C-CADF-445A-8657-1D411F9733FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Logging.Serilog", "ByteBuster.Logging.Serilog\ByteBuster.Logging.Serilog.csproj", "{99095348-8373-4EED-BBDB-28AAFC2A97D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{737FAC15-8B60-4A4D-935A-3041C941F784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737FAC15-8B60-4A4D-935A-3041C941F784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737FAC15-8B60-4A4D-935A-3041C941F784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737FAC15-8B60-4A4D-935A-3041C941F784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7076F166-CDDC-41C8-9C09-DBA063A1305C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7076F166-CDDC-41C8-9C09-DBA063A1305C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7076F166-CDDC-41C8-9C09-DBA063A1305C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7076F166-CDDC-41C8-9C09-DBA063A1305C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ECDA200-AE09-401F-9650-025C11B0C2F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ECDA200-AE09-401F-9650-025C11B0C2F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ECDA200-AE09-401F-9650-025C11B0C2F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ECDA200-AE09-401F-9650-025C11B0C2F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9190330-574B-4362-A72A-D54904ABAE7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9190330-574B-4362-A72A-D54904ABAE7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9190330-574B-4362-A72A-D54904ABAE7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9190330-574B-4362-A72A-D54904ABAE7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99095348-8373-4EED-BBDB-28AAFC2A97D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99095348-8373-4EED-BBDB-28AAFC2A97D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99095348-8373-4EED-BBDB-28AAFC2A97D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99095348-8373-4EED-BBDB-28AAFC2A97D6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ECDA200-AE09-401F-9650-025C11B0C2F0} = {5BC0D5E2-7278-4679-8462-0648BCF8EBB8}
+		{737FAC15-8B60-4A4D-935A-3041C941F784} = {C4B755F8-1525-40A1-ADD6-DA79820A8756}
+		{A9190330-574B-4362-A72A-D54904ABAE7B} = {C4B755F8-1525-40A1-ADD6-DA79820A8756}
+		{7076F166-CDDC-41C8-9C09-DBA063A1305C} = {C690F8C7-5BAA-41FF-958E-1BDD37930846}
+		{093CDF87-C45E-44F9-85B2-BCD298A2F7E0} = {414B7285-5AEC-4357-A548-DCC3D4DD691C}
+		{99095348-8373-4EED-BBDB-28AAFC2A97D6} = {2CDD4B4C-CADF-445A-8657-1D411F9733FE}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "Windows Machine": {
+      "commandName": "Project",
+      "nativeDebugging": false,
+      "workingDirectory": "",
+      "launchBrowser": false,
+      "hotReloadEnabled": true,
+      "use64Bit": false,
+      "targetProject": "",
+      "commandLineArgs": "",
+      "executablePath": "",
+      "environmentVariables": {},
+      "applicationUrl": "",
+      "externalUrlConfiguration": false,
+      "launchUrl": "",
+      "ancmHostingModel": "InProcess"
+    }
+  }
+}

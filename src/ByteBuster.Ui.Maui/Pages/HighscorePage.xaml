@@ -6,10 +6,19 @@
              xmlns:viewmodel="clr-namespace:ByteBuster.Ui.Maui.ViewModels"
              x:DataType="viewmodel:HighscoreViewModel"
              Title="{Binding Title}">
-    <VerticalStackLayout>
-        <Label 
-            Text="{Binding Title}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid>
+        <Image
+            Source="stacked_waves.png"
+            Aspect="AspectFill"
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill" />
+        <VerticalStackLayout
+            VerticalOptions="Fill"
+            HorizontalOptions="Fill">
+
+            <Label Text="Label inside of StackLayout with an image in the background" />
+
+        </VerticalStackLayout>
+
+    </Grid>
 </ContentPage>

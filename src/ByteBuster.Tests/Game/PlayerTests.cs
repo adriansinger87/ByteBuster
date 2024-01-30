@@ -1,4 +1,5 @@
 using ByteBuster.Game;
+using ByteBuster.Game.Assets;
 using ByteBuster.Logging.Extensions;
 using Xunit.Abstractions;
 
@@ -11,8 +12,22 @@ public class PlayerTests(ITestOutputHelper output) : TestsBase<PlayerTests>(outp
     {
         var player = new Player();
         log.Trace($"{typeof(Player)} constructor called.");
-        
+
         Assert.NotNull(player);
-        Assert.True(!string.IsNullOrEmpty(player.Name), "Player.Name should not be null or empty."); 
+        Assert.True(!string.IsNullOrEmpty(player.Name), "Player.Name should not be null or empty.");
+    }
+
+    [Fact]
+    public void Player_PickUp_Assets()
+    {
+        var player = new Player();
+        
+        player.Condition.Discharge(5);
+        player.PickUp(new RechargeAsset());
+        player.PickUp(new PowerUpgradeAsset());
+        player.PickUp(new KeyAsset());
+        
+        log.Trace(player.Condition);
+        Assert.True(player.Condition.IsAlive); 
     }
 }

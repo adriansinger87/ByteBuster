@@ -1,3 +1,5 @@
+using ByteBuster.Abstractions.Enumerations;
+
 namespace ByteBuster.Abstractions.Runtime;
 
 public interface IRuntime

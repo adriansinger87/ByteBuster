@@ -1,5 +1,7 @@
 namespace ByteBuster.Abstractions.Levels;
 
-public class ILevel
+public interface ILevel
 {
+    string Name { get; }
+    public ICell[,] Map { get; }
 }

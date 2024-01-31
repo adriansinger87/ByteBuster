@@ -1,11 +1,11 @@
 ﻿using ByteBuster.Abstractions.Gamer;
-using ByteBuster.Game.Assets;
-using ByteBuster.Game.Runtime;
+using ByteBuster.Assets;
 using ByteBuster.Logging;
 using ByteBuster.Logging.Extensions;
+using ByteBuster.Runtime;
 using Microsoft.Extensions.Logging;
 
-namespace ByteBuster.Game;
+namespace ByteBuster.Gamer;
 
 public class Player(string name) : IPlayer
 {
@@ -34,7 +34,7 @@ public class Player(string name) : IPlayer
     private bool ProcessKey(IAsset asset)
     {
         if (asset is not KeyAsset) return false;
-        Inventory.Assets.Add(asset);
+        Inventory.Items.Add(asset);
         log.Debug($"Key '{asset}' added to inventory.");
         return true;
     }
@@ -42,7 +42,7 @@ public class Player(string name) : IPlayer
     {
         if (asset is not PowerUpgradeAsset) return false;
         Condition.UpgradePower(5);  // TODO: fix magic integer
-        Inventory.Assets.Add(asset);
+        Inventory.Items.Add(asset);
         log.Debug($"New asset '{asset}' added to power bank.");
         return true;
     }

@@ -1,7 +1,7 @@
 using ByteBuster.Abstractions.Enumerations;
 using ByteBuster.Abstractions.Gamer;
 
-namespace ByteBuster.Game.Assets;
+namespace ByteBuster.Assets;
 
 public class KeyAsset : IAsset
 {

@@ -1,7 +1,7 @@
 using ByteBuster.Abstractions.Enumerations;
 using ByteBuster.Abstractions.Runtime;
 
-namespace ByteBuster.Game.Runtime;
+namespace ByteBuster.Runtime;
 
 public class GameRuntime : IRuntime
 {

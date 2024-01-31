@@ -1,5 +1,6 @@
-using ByteBuster.Game;
-using ByteBuster.Game.Assets;
+using ByteBuster;
+using ByteBuster.Assets;
+using ByteBuster.Gamer;
 using ByteBuster.Logging.Extensions;
 using Xunit.Abstractions;
 
@@ -29,5 +30,7 @@ public class PlayerTests(ITestOutputHelper output) : TestsBase<PlayerTests>(outp
         
         log.Trace(player.Condition);
         Assert.True(player.Condition.IsAlive); 
+        Assert.True(player.Inventory.Count == 2);
+        Assert.True(player.Condition.IsAlive);
     }
 }

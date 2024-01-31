@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Abstractions", "ByteBuster.Abstractions\ByteBuster.Abstractions.csproj", "{737FAC15-8B60-4A4D-935A-3041C941F784}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Game", "ByteBuster.Game\ByteBuster.Game.csproj", "{7076F166-CDDC-41C8-9C09-DBA063A1305C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster", "ByteBuster\ByteBuster.csproj", "{7076F166-CDDC-41C8-9C09-DBA063A1305C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ByteBuster.Ui.Maui", "ByteBuster.Ui.Maui\ByteBuster.Ui.Maui.csproj", "{093CDF87-C45E-44F9-85B2-BCD298A2F7E0}"
 EndProject

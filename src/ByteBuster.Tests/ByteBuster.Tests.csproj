@@ -25,7 +25,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\ByteBuster.Game\ByteBuster.Game.csproj" />
+      <ProjectReference Include="..\ByteBuster\ByteBuster.csproj" />
       <ProjectReference Include="..\ByteBuster.Logging\ByteBuster.Logging.csproj" />
       <ProjectReference Include="..\ByteBuster.Logging.Serilog\ByteBuster.Logging.Serilog.csproj" />
     </ItemGroup>

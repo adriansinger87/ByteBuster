@@ -4,33 +4,34 @@ using ByteBuster.Logging;
 using ByteBuster.Logging.Extensions;
 using Microsoft.Extensions.Logging;
 
-namespace ByteBuster.Game.Runtime;
+namespace ByteBuster.Runtime;
 
-public class RunningState : IRuntimeState
+public class PausedState : IRuntimeState
 {
     private readonly ILogger log = LogFactoryProvider.CreateLogger<RunningState>();
     
-    public RuntimeStateTypes StateType => RuntimeStateTypes.Running;
-
+    public RuntimeStateTypes StateType => RuntimeStateTypes.Paused;
+    
     public void Start(IRuntime context)
     {
-        log.Debug("Can't start while in running state.");
+        // TODO: REALLY WANNA RESTART LEVEL?
+        log.Debug("Do you want to restart the level?");
     }
 
     public void Stop(IRuntime context)
     {
-        log.Debug("Stopping the runtime.");
+        log.Debug("Stopping from Pause state.");
         context.SetState(new ReadyState());
     }
 
     public void Pause(IRuntime context)
     {
-        log.Debug("Pausing the runtime.");
-        context.SetState(new PausedState());
+        log.Debug("Can't pause while in Pause state.");
     }
 
     public void Resume(IRuntime context)
     {
-        log.Debug("Can't resume while in running state.");
+        log.Debug("Resuming from Pause state.");
+        context.SetState(new RunningState());
     }
 }

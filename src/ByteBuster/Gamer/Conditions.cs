@@ -1,10 +1,10 @@
 using ByteBuster.Abstractions.Gamer;
-using ByteBuster.Game.Runtime;
 using ByteBuster.Logging;
 using ByteBuster.Logging.Extensions;
+using ByteBuster.Runtime;
 using Microsoft.Extensions.Logging;
 
-namespace ByteBuster.Game;
+namespace ByteBuster.Gamer;
 
 public class Conditions(uint power, uint velocity) : IConditional
 {
@@ -15,7 +15,7 @@ public class Conditions(uint power, uint velocity) : IConditional
     
     public Conditions() : this(10, 10)
     {
-            
+        
     }
     
     public void Charge(uint power)
